@@ -409,6 +409,7 @@ $(document).ready(function() {
           <pre class="prettyprint">
 &lt;script src="jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
 &lt;script src="highcharts.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="highcharts-more.js" type="text/javascript"&gt;&lt;/script&gt; //if you want to use spiderweb graph or/and polar chart
 &lt;script src="jquery.highchartsTable.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
@@ -606,6 +607,15 @@ $(document).ready(function() {
                 <td>Callback to format the datalabels displayed on the chart.</td>
                 <td>Name of the function to call</td>
                 <td><a href="http://jsfiddle.net/gh/get/jquery/1.4.4/pmsipilot/jquery-highchartTable-plugin/tree/gh-pages/demos/data-graph-datalabels-formatter/">Example</a></td>
+              </tr>
+
+              <!-- Polar -->
+              <tr>
+                <td style="white-space: nowrap;"><strong>data-graph-polar</strong></td>
+                <td>table</td>
+                <td>When true, cartesian charts like line, spline, area and column are transformed into the polar coordinate system. Requires highcharts-more.js.</td>
+                <td>Boolean</td>
+                <td></td>
               </tr>
 
             </tbody>
@@ -939,6 +949,52 @@ $(document).ready(function() {
               <td>Displays total on columns when they are stacked with the data-graph-stack-group attribute.</td>
               <td>1</td>
               <td><a href="http://jsfiddle.net/DTDwq/" >Example</a></td>
+            </tr>
+
+            <!-- Show last label -->
+            <tr>
+              <td style="white-space: nowrap;"><strong>data-graph-xaxis-show-last-label</strong></td>
+              <td>table</td>
+              <td>If you have a number on the last label, put it to false.</td>
+              <td>Boolean</td>
+              <td></td>
+            </tr>
+
+            <!-- Grid line interpolation -->
+            <tr>
+              <td style="white-space: nowrap;"><strong>data-graph-yaxis-X-grid-line-interpolation</strong></td>
+              <td>table</td>
+              <td>Define the render of the graph.</td>
+              <td>
+                <ul>
+                  <li>circle (default)</li>
+                  <li>polygon</li>
+                </ul>
+              </td>
+              <td></td>
+            </tr>
+
+            <!-- Tickmark placement -->
+            <tr>
+              <td style="white-space: nowrap;"><strong>data-graph-xaxis-tickmark-placement</strong></td>
+              <td>table</td>
+              <td>If "on" the tick mark is placed in the center of the category, if "between" the tick mark is placed between categories.</td>
+              <td>
+                <ul>
+                  <li>between (default)</li>
+                  <li>on</li>
+                </ul>
+              </td>
+              <td></td>
+            </tr>
+
+            <!-- Tickmark placement -->
+            <tr>
+              <td style="white-space: nowrap;"><strong>data-graph-xaxis-gridLine-width</strong></td>
+              <td>table</td>
+              <td>The width of the grid lines extending the ticks across the plot area.</td>
+              <td>Decimal</td>
+              <td></td>
             </tr>
 
             </tbody>
